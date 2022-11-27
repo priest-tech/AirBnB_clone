@@ -14,6 +14,7 @@ from models.review import Review
 from shlex import split
 import re
 
+
 def parse(arg):
         """
         parses arguments on the command line intrepreter
@@ -38,8 +39,8 @@ def parse(arg):
 class HBNBCommand(cmd.Cmd):
     """defines the cmd class"""
     prompt = "(hbnb) "
-    __our_classes = ['BaseModel', 'User', 'State',
-                   'City', 'Amenity', 'Place', 'Review']
+    __our_classes = ['BaseModel', 'User', 'State', 'City',
+                     'Amenity', 'Place', 'Review']
 
     def do_quit(self, arg):
         """Quit command to exit the program"""
